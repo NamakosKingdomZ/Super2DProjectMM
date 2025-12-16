@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
 	#endregion
 
 	#region Public Methods
+
 	#endregion
 
 	#region Private Methods

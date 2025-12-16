@@ -1,15 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
+
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class EndGame : MonoBehaviour
 {
-	private void OnTriggerEnter(Collider other)
+	public string Fin;
+
+	private void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.CompareTag("Player"))
+		Debug.Log("Entró algo al trigger: " + other.name);
+
+		if (other.CompareTag("Player"))
 		{
-			SceneManager.LoadScene("Fin");
+			Debug.Log("Es el jugador, cambiando escena");
+			SceneManager.LoadScene(Fin);
 		}
 	}
 }
